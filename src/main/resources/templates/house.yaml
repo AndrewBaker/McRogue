@@ -1,7 +1,14 @@
-# test
+# test template for a small house
+# todo: '#' and '.' should be defined in subsection
+# of this yaml as Bricks and Air.
 ---
-name: Test User
-age: 30
-roles: 
-  - User
-  - Editor
+name: House
+layers: 
+  - |
+    ###
+    ###
+    ###
+  - |
+    ###
+    #.#
+    ###
