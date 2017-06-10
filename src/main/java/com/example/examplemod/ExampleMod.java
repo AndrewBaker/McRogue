@@ -23,7 +23,7 @@ public class ExampleMod
     {
         MinecraftForge.EVENT_BUS.register(this);
     }
-
+    
      public Template loadTemplate() {
         try {
             YAMLMapper mapper = new YAMLMapper();
@@ -45,7 +45,8 @@ public class ExampleMod
             World world = player.getEntityWorld();
             Template template = loadTemplate();
 
-            Actualizer.buildFromTemplate(world, player.getPosition(), template);
+            Actualizer.create(template)
+                      .buildFromTemplate(world, player.getPosition());
         }
     }
 }

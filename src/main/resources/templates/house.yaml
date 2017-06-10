@@ -1,8 +1,9 @@
 # test template for a small house
-# todo: '#' and '.' should be defined in subsection
-# of this yaml as Bricks and Air.
 ---
 name: House
+symbols:
+  '#': '100,block_brick_wall,block_obsidian'
+  '.': '100,mob_zombie'
 layers: 
   - |
     ###
